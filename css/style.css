@@ -7,6 +7,7 @@ Accent #1 (Pastel Orange): #FFBFA0
 Accent #2 (Pastel Purple): #E9D6EC
 */
 
+
 /* Global Tags */
 
 *{
@@ -20,10 +21,17 @@ body {
     font-weight: 300;
     line-height: 1.6;
     color: #000;
+    margin: 0;
 }
 
 h1, h2, h3, h4 {
     line-height: 1.4;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    color: #000;
 }
 
 h1{
@@ -65,19 +73,24 @@ a:active {
 
 a:hover,
 a:focus {
-    color: #053B06;
+    color: #E5F9E0;
     text-decoration: underline;
 }
 
 
 header {
-    background-color: #60935D;
-    padding: 10px;
+    background-color: #053B06;
     margin: 0 10px;
     border-bottom: 3px solid #000;
     text-align: center;
     box-shadow: 0px 6px 5px 0px rgba(50, 50, 50, 0.75);
     position: relative;
+}
+
+footer {
+    text-align: center;
+    margin: 0 10px;
+    background-color: #053B06;
 }
 
 
@@ -96,12 +109,12 @@ nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #000;
+    color: #FFBFA0;
 }
 
 nav > ul > li > a:hover {
     color: #E9D6EC;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 nav > ul > li > a:visited {
@@ -120,38 +133,41 @@ nav {
 }
 
 .button {
-    display: inline-block;
-   background-color: #60935D;
+   display: inline-block;
+   background-color: #053B06;
    color: #ffffff;
    font-weight: 400;
    padding: 10px;
    border-radius: 3px;
-   border-bottom: 2px solid #053B06;
-   transition: 0.2s opacity;
+   border-bottom: 2px solid #032203;
+   transition: 0.2 opacity;
 }
 
 .button:hover {
     opacity: 0.8;
     text-decoration: none;
+    color: #E9D6EC;
 }
 
-.button.contact {
+.button-contact {
+    display: inline-block;
     background-color: transparent;
-    color: #60935D;
-    text-transform: uppercase;
-    border: 2px solid #053B06;
+    border: 1px solid rgb(255, 255, 255);
+    color: #FFBFA0;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #bbbbbb;
+    transition: 0.2s opacity;
 }
 
-.button.contact:hover {
-    background-color: #60935D;
-    color: #ffffff;
+.button-contact:hover {
+    color:#E9D6EC;
+    opacity: 0.8;
+    text-decoration: none;
 }
 
 /* Layout Styling */
-
-.container {
-    padding: 0 10px;
-}
 
 #work .row {
     margin: 25px 0; 
@@ -171,5 +187,183 @@ nav {
 
 #hero {
     background-color: #60935D;
+    border-bottom: 2px solid #000;
+    margin: 0 10px;
 }
 
+#hero > p {
+    text-align: center;
+}
+
+#work{
+    background-color: #60935D;
+    margin: 10px 10px;
+    padding: 15px;
+}
+
+#work > p {
+    text-align: left;
+}
+
+#my-work {
+    text-align: center;
+}
+
+
+
+.logo {
+    size: fixed;
+}
+
+#about-me > h1 {
+    text-align: center;
+    background-color: #032203;
+    color: #ffffff;
+}
+
+#my-story {
+    background-color: #60935D;
+    margin: 10px 0;
+}
+
+#my-story h2, p, h3 {
+    padding: 10px;
+}
+
+#footer > h2 {
+    color: #ffffff;
+}
+
+#footer > p {
+    color: #ffffff;
+}
+
+#pluto-pay> h1 {
+    text-align: center;
+    background-color: #032203;
+    color: #ffffff;
+}
+
+#pluto-header {
+    background-color: #60935D;
+    margin-top: 10px;
+}
+
+#my-process {
+    background-color: #032203;
+    margin-top: 10px;
+    padding: 5px;
+    color: white;
+}
+
+#step-card {
+    background-color: #60935D;
+    margin-top: 20px;
+    color: #000;
+}
+
+#about-picture {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Animations */
+
+
+@keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+
+}
+
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px, 50px);}
+}
+
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px, 48px);}
+    to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/*====================
+Medium devices (640px and Larger)
+======================*/
+@media only screen and (min-width:640px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+
+    #logo {
+        margin-top: 15px;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
+    }
+
+    .row::after {
+        content:"";
+        clear: both;
+        display: table;
+    }
+    
+
+}
+
+/*====================
+Large devices (1024px and Larger)
+======================*/
+@media only screen and (min-width:1024x) {
+    
+    .col-lg-7 {
+        width: 58.333%;
+    }
+
+    .col-lg-5 {
+        width: 41.66%;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+}
+
+/*====================
+X-Large devices (1440px and Larger)
+======================*/
+@media only screen and (min-width:1440px) {
+    
+}

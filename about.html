@@ -28,7 +28,7 @@
         <main>
             <div> <!-- 2x whole section block -->
                 <div>
-                    <div id="about-me"> <!--container wrapper-->
+                    <div class="container" id="about-me"> <!--container wrapper-->
                         <h1>About Me</h1>
                         <div> <!--row for columns-->
                             <div id="my-story"> <!--columns-->
@@ -44,29 +44,28 @@
                                     zeal; trying to absorb as many skills and as much knowledge as I can. With each project I complete I can see how my skills are
                                     improving, and will only continue to improve as I gain more and more experience.</p>
                                 <a href="files/resume.pdf" download class="button">Download my CV</a>
-                                <h2 id="skills-and-tools">Skills & Tools</h2>
-                                <div id="skills"> <!--column for Skills-->
-                                    <h3>Relevant Skills</h3>
-                                    <ul>
-                                     <li>Crafting relevant and focused problem statements and hypotheses.</li>
-                                        <li>User research (Moderated, unmoderated, in-person, remote)</li>
-                                        <li>Competitive analysis</li>
-                                        <li>Card Sorting</li>
-                                        <li>Persona Creation</li>
-                                        <li>User journeys</li>
-                                        <li>Wireframes</li>
-                                        <li>Prototype creation/design</li>
-                                        <li>Basic HTML, CSS, and javascript knowledge</li>
-                                    </ul>
+                                <div id="skills-tools" class="row">
+                                 <h2>Skills & Tools</h2>
+                                    <div id="skills" class="col-md-6"> <!--column for Skills-->
+                                        <h3>Relevant Skills</h3>
+                                        <ul>
+                                        <li>Crafting relevant and focused problem statements and hypotheses.</li>
+                                            <li>User research (Moderated, unmoderated, in-person, remote)</li>
+                                            <li>Competitive analysis</li>
+                                            <li>Card Sorting</li>
+                                            <li>Persona Creation</li>
+                                            <li>User journeys</li>
+                                            <li>Wireframes</li>
+                                    </div>
+                                    <div id="tools", class="col-md-6"> <!--Column for Tools-->
+                                        <h3>Tools I Use</h3>
+                                        <ul>
+                                            <li>Figma</li>
+                                            <li>Behance</li>
+                                            <li>Google Workspace</li>
+                                            <li>Visual Studio</li>
+                                        </ul>
                                 </div>
-                                <div id="tools"> <!--Column for Tools-->
-                                    <h3>Tools I Use</h3>
-                                    <ul>
-                                        <li>Figma</li>
-                                        <li>Behance</li>
-                                        <li>Google Workspace</li>
-                                        <li>Visual Studio</li>
-                                    </ul>
                                 </div>
                             </div>
 
@@ -78,12 +77,12 @@
            
         </main>
 
-        <footer id="contact">
-            <div>
+        <footer>
+            <div class="container" id="footer">
                 <h2>Get in Touch</h2>
                 <p>If you like my work, I encourage you to reach out to me to discuss future oppurtunities! Please contact me. Call: +61 410038082. Prefer sending an email?</p>
                 <div>
-                    <a href="mailto:danramsay96@gmail.com" class="button contact">Email Me</a>
+                    <a href="mailto:danramsay96@gmail.com" class="button-contact">Email Me</a>
                 </div>
                 <nav>
                     <ul>
@@ -117,6 +116,6 @@
                 <p>Copyright Dan Ramsay 2022</p>
             </div>
         </footer>
-        
+
     </body>
 </html>
