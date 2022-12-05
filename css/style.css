@@ -94,6 +94,13 @@ footer {
 }
 
 
+.container {
+    padding: 0 15px;
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
 /* Layout */
 
 nav > ul {
@@ -354,10 +361,9 @@ Large devices (1024px and Larger)
     }
     
     .container {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+        padding: 0 0px;
+    }
+
 
 }
 
